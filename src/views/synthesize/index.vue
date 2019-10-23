@@ -39,25 +39,22 @@ export default {
 .wrapperAll {
   width: 100%;
   display: flex;
+  height: 750px;
 }
 .one {
   width: 23.8%;
-  border: solid 1px #ccc;
 
 }
 .two {
   width: 42.3%;
-  border: solid 1px #ccc;
   margin-left: 14px;
 }
 .three {
   width: 14%;
-  border: solid 1px #ccc;
   margin-left: 14px;
 }
 .fore {
   width: 18.9%;
-  border: solid 1px #ccc;
   margin-left: 14px;
 }
 </style>

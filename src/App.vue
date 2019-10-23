@@ -8,7 +8,10 @@
         <li v-for="(item,index) in list" :key="index">{{item.title}}</li>
       </ul>
       <ol class="header-lists">
-        <li v-for="(item,index) in lists" :key="index">{{item.title}}</li>
+        <li>乌鲁木齐*多云转晴*23°C</li>
+        <li>{{this.systemDate}}</li>
+        <li>{{this.week}}</li>
+        <li>{{this.timer}}</li>
       </ol>
     </div>
     <div class="main">
@@ -47,40 +50,64 @@ export default {
           title: "清洁能源"
         }
       ],
-      lists: [
-        {
-          id: 1,
-          title: "乌鲁木齐-多云转晴-23°C"
-        },
-        {
-          id: 2,
-          title: "2019年5月26日"
-        },
-        {
-          id: 3,
-          title: "星期三"
-        },
-        {
-          id: 4,
-          title: "21:00:00"
-        }
-      ]
+      timer: "", //时间
+      currentTime: new Date(), // 获取当前时间
+      systemDate: "",//日期
+      week:"",//星期
     };
   },
   components: {
     Synthesize
+  },
+  created() {
+    let nowDate = new Date();
+    let date = {
+      year: nowDate.getFullYear(),
+      month:
+        nowDate.getMonth() + 1 < 10
+          ? "0" + (nowDate.getMonth() + 1)
+          : nowDate.getMonth() + 1,
+      date:
+        nowDate.getDate() < 10 ? "0" + nowDate.getDate() : nowDate.getDate(),
+      hour:
+        nowDate.getHours() < 10 ? "0" + nowDate.getHours() : nowDate.getHours(),
+      minutes:
+        nowDate.getMinutes() < 10
+          ? "0" + nowDate.getMinutes()
+          : nowDate.getMinutes(),
+      seconds:
+        nowDate.getSeconds() < 10
+          ? "0" + nowDate.getSeconds()
+          : nowDate.getSeconds()
+    };
+    console.log(date);
+    this.systemDate = date.year + "年" + date.month + "月" + date.date + "日";
+    this.timer = date.hour + ":" + date.minutes + ":" + date.seconds;
+   var now = new Date();
+       var day = now.getDay();
+       var weeks = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+        this.week = weeks[day];
   }
 };
 </script>
 
 <style>
+.el-textarea__inner {
+  border: 0;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #90befc;
+  font-size: 14px;
+  /* word-spacing: 8px; */
+  /* letter-spacing:1px; */
+  text-indent: 2em;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   width: 5000px;
-  height: 900px;
+  height: 850px;
   background: #000033;
   color: #ffff;
 }
@@ -111,7 +138,7 @@ export default {
   height: 50px;
   background-image: url("./assets/img/标题bg_3.png");
   background-size: 100% 100%;
-  margin-top: 7px;
+  padding-top: 7px;
 }
 .header-list {
   position: absolute;
@@ -136,9 +163,10 @@ export default {
   font-size: 20px;
   justify-content: space-around;
 }
+
 .main {
   width: 100%;
-  height: 800px;
+  height: 750px;
   background-image: url("./assets/img/bg_总.png");
   background-size: 100% 100%;
 }
