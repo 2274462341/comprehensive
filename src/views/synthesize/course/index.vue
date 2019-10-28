@@ -81,49 +81,47 @@ export default {
 </script>
 
 <style scoped>
-.num1{
+.num1 {
   position: absolute;
-  top:34px;
-  left:28px;
+  top: 34px;
+  left: 28px;
   font-size: 24px;
 }
-.num1{
+.num1 {
   position: absolute;
-  top:34px;
-  left:22px;
+  top: 34px;
+  left: 22px;
   font-size: 28px;
 }
-.num2{
+.num2 {
   position: absolute;
-  top:134px;
-  right:22px;
+  top: 134px;
+  right: 22px;
   font-size: 28px;
 }
-.num3{
+.num3 {
   position: absolute;
-  top:236px;
-  left:22px;
+  top: 236px;
+  left: 22px;
   font-size: 28px;
 }
-.num4{
+.num4 {
   position: absolute;
-  top:338px;
-  right:22px;
+  top: 338px;
+  right: 22px;
   font-size: 28px;
 }
-.num5{
+.num5 {
   position: absolute;
-  top:438px;
-  left:22px;
+  top: 438px;
+  left: 22px;
   font-size: 28px;
 }
-.num6{
+.num6 {
   position: absolute;
-  top:543px;
-  right:22px;
+  top: 543px;
+  right: 22px;
   font-size: 28px;
-}
-.wrapperFive {
 }
 .course-head {
   height: 40px;
