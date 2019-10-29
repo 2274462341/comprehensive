@@ -77,6 +77,7 @@ export default {
   background-image: url("../../../../assets/img/边框_内.png");
   background-size: 100% 100%;
   display: flex;
+  font-size: 14px;
 }
 .Definition{
     width: 1450px;
