@@ -38,9 +38,6 @@
             </div>
             <div class="swiper-slide" style="background:red"></div>
           </div>
-          <!-- Add Pagination -->
-          <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
-          <!-- Add Arrows -->
         </div>
       </div>
       <div class="bigbox">

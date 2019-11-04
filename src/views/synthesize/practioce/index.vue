@@ -20,26 +20,33 @@ export default {
 
 <style scoped>
 .wrapperFore {
-  width: 100%;
-  height: 750px;
+  width: 95.9375rem;
+  height: 120.4375rem;
+  margin-left: 2.5rem;
+
 }
 .bg {
-  width: 95%;
-  height: 700px;
+  width: 95.9375rem;
+
+  height: 110.8375rem;
   background-image: url("../../../assets/img/路径图.png");
   background-size: 100% 100%;
-  margin-left: 2%;
+  margin-top: 2.1rem;
+  margin-top: 2.1rem;
 }
 .practive-head {
-  height: 40px;
-  line-height: 40px;
+  height: 7.5rem;
+  line-height: 3.125rem;
   display: flex;
-  font-size: 18px;
-  margin-left: 2%;
+}
+
+.practive-head > span {
+  margin-top: 2.5rem;
+  font-size: 2.5rem;
+  width: 32rem;
 }
 .practive-head > hr {
-  width: 65%;
-  padding-top: 18px;
-  margin-left: 8px;
+  width: 63.4375rem;
+  margin-top: 3.85rem;
 }
 </style>

@@ -1,16 +1,10 @@
 <template>
   <div>
-    <el-upload
-      action="https://jsonplaceholder.typicode.com/posts/"
-      list-type="picture-card"
-      :on-preview="handlePictureCardPreview"
-      :on-remove="handleRemove"
-    >
-      <i class="el-icon-plus"></i>
-    </el-upload>
-    <el-dialog :visible.sync="dialogVisible">
-      <img width="100%" :src="dialogImageUrl" alt />
-    </el-dialog>
+    <form action enctype="multipart/form-data">
+      <input id="file" class="filepath" onchange="changepic(this)" type="file" />
+      <br />
+      <img src id="show" width="200" />
+    </form>
   </div>
 </template>
 
@@ -24,12 +18,13 @@ export default {
     };
   },
   methods: {
-    handleRemove(file, fileList) {
-      console.log(file, fileList);
-    },
-    handlePictureCardPreview(file) {
-      this.dialogImageUrl = file.url;
-      this.dialogVisible = true;
+  changepic() {
+        var reads= new FileReader();
+        f=document.getElementById('file').files[0];
+        reads.readAsDataURL(f);
+        reads.οnlοad=function (e) {
+            document.getElementById('show').src=this.result;
+        };
     }
   }
 };

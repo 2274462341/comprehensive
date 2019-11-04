@@ -37,24 +37,24 @@ export default {
 
 <style scoped>
 .wrapperAll {
-  width: 100%;
+  width: 720rem;
+  height: 120.4375rem;
   display: flex;
-  height: 750px;
 }
 .one {
-  width: 23.8%;
-
+  width: 171rem;
 }
 .two {
-  width: 42.3%;
-  margin-left: 14px;
+  width: 303.125rem;
+  margin-left: 1.625rem;
 }
 .three {
-  width: 14%;
-  margin-left: 14px;
+  width: 100.9375rem;
+  margin-left: 1.625rem;
 }
 .fore {
-  width: 18.9%;
-  margin-left: 14px;
+  width: 133rem;
+  margin: 0 1.625rem;
 }
 </style>
+ 

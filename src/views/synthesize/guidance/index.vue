@@ -6,7 +6,7 @@
         <hr />
       </div>
       <div class="content-title">
-        <el-input type="textarea" :rows="4" placeholder="请输入内容" v-model="textarea"></el-input>
+        <el-input type="textarea" :rows="8" placeholder="请输入内容" v-model="textarea"></el-input>
       </div>
       <div class="content-bg"></div>
       <div class="content-footer">
@@ -17,6 +17,7 @@
         </div>
       </div>
     </div>
+
     <div class="content-significance">
       <div class="significance-head">
         <span>综合能源服务及意义</span>
@@ -52,7 +53,7 @@
         </ul>
       </div>
 
-      <div class="significance-bg">
+      <div class="sgniificance-bg">
         <p></p>
       </div>
     </div>
@@ -63,7 +64,7 @@
 </template>
 
 <script>
- export default {
+export default {
   name: "",
   data() {
     return {
@@ -144,232 +145,243 @@
 
 <style scoped>
 .kind-bg {
-  width: 94%;
-  height: 340px;
+  width: 91rem;
+  height: 51.625rem;
   background-image: url("../../../assets/img/服务类型.png");
   background-size: 100% 100%;
-  margin-left: 16px;
-  margin-top: 16px;
+  margin-top: 3.625rem;
   position: relative;
 }
 .kind-servse {
-  height: 80px;
+  height: 8rem;
+  width: 103.4375rem;
   display: flex;
-  justify-content: space-around;
-  font-size: 14px;
   color: #90befc;
   position: absolute;
-  left: 0;
-  top: 46px;
-}
-.kind-servse > li {
-  width: 160px;
-  height: 100px;
-  width: 160px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }
-.kind-servse > li:nth-child(1) {
-  padding-left: 90px;
-}
-.kind-servse > li:nth-child(2) {
-  padding-left: 50px;
-}
-.kind-servse > li:nth-child(3) {
-  padding-left: 60px;
-}
-.kind-servse > li > h5 {
-  font-size: 16px;
-  color: #fff;
-  line-height: 30px;
-}
-.kind-servse > li > p {
-  line-height: 20px;
-  font-size: 14px;
-}
-.kind-foot {
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  font-size: 12px;
-  color: #90befc;
-  position: absolute;
-  bottom: -20px;
-}
-.kind-foot > li:nth-child(1) {
-  padding-left: 100px;
-}
-.kind-foot > li:nth-child(2) {
-  padding-left: 60px;
-}
-.kind-foot > li:nth-child(3) {
-  padding-left: 50px;
+  top: 11rem;
 }
 
-.kind-foot > li {
-  width: 160px;
+.kind-servse > li:nth-child(1) {
+  height: 6.9rem;
+  width: 15.49rem;
+  margin-left: 9.8rem;
+}
+.kind-servse > li:nth-child(2) {
+  width: 15rem;
+  margin-left: 13.3rem;
+}
+.kind-servse > li:nth-child(3) {
+  margin-left: 14.8rem;
+  width: 18.49rem;
+}
+.kind-servse > li > h5 {
+  font-size: 2rem;
+  color: #fff;
+}
+.kind-servse > li > p {
+  line-height: 2rem;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+.kind-foot {
+  height: 8rem;
+  width: 103.4375rem;
+  display: flex;
+  color: #90befc;
+  position: absolute;
+  top: 61.5rem;
+  left: 5rem;
+}
+.kind-foot > li:nth-child(1) {
+  width: 17rem;
+  margin-left: 6.8rem;
+}
+.kind-foot > li:nth-child(2) {
+  width: 19rem;
+  margin-left: 12.8rem;
+}
+.kind-foot > li:nth-child(3) {
+  width: 19rem;
+  margin-left: 6.8rem;
 }
 .kind-foot > li > h5 {
-  font-size: 16px;
+  font-size: 2rem;
   color: #fff;
-  line-height: 30px;
 }
 .kind-foot > li > p {
-  line-height: 20px;
-  font-size: 12px;
+  line-height: 2rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
 }
 
 .significance-kind {
-  height: 440px;
   position: relative;
 }
 .kind-head {
-  height: 40px;
-  line-height: 40px;
+  height: 7.5rem;
+  line-height: 3.125rem;
   display: flex;
-  font-size: 18px;
+}
+.kind-head > span {
+  font-size: 2.5rem;
+  width: 20.5rem;
 }
 .kind-head > hr {
-  width: 78%;
-  padding-top: 18px;
-  margin-left: 8px;
+  width: 80rem;
+  margin-left: 1.25rem;
+  margin-top: 1.5rem;
 }
 .wrapperOne {
-  height: 100%;
+  height: 120.4375rem;
+  width: 171rem;
   display: flex;
 }
 .content-guidance {
-  width: 39%;
-  margin: 0 8px;
+  width: 61rem;
 }
 .content-head {
-  height: 40px;
-  line-height: 40px;
+  width: 59.5rem;
+  height: 7.5rem;
+  line-height: 3.125rem;
   display: flex;
-  font-size: 18px;
+}
+.content-head > span {
+  margin-top: 2.5rem;
+  font-size: 2.5rem;
+  margin-left: 2.5rem;
+  width: 10.5rem;
 }
 .content-head > hr {
-  width: 80%;
-  padding-top: 18px;
-  margin-left: 8px;
+  width: 48rem;
+  margin-left: 1.25rem;
+  margin-top: 3.85rem;
 }
 .content-title {
-  height: 100px;
-  color: #90befc;
-
+  height: 12rem;
+  width: 59.5rem;
+  padding-left: 2.5rem !important;
   position: relative;
+  margin-top: 2.4rem;
 }
-.el-textarea__inner {
-  border: 0;
-  outline: none;
-  background-color: rgba(0, 0, 0, 0);
-}
+
 .content-bg {
-  height: 260px;
-  width: 58%;
-  margin-left: 70px;
+  height: 41.25rem;
+  width: 41.25rem;
+  margin-left: 8.78125rem;
   background-image: url("../../../assets/img/环形bg_2.png");
   background-size: 100% 100%;
 }
 .content-first {
-  text-align: left;
   text-indent: 2em;
-  line-height: 22px;
-  color: #90befc;
-  font-size: 14px;
+  height: 5.6875rem;
+  line-height: 3.125rem;
+  color: #8ebffc;
+  font-size: 1.8rem;
+  width: 59.5rem;
+  margin-left: 2.5rem;
 }
 .content-two {
+  width: 59.5rem;
   display: flex;
 }
 .word {
-  width: 100px;
-  height: 280px;
-  line-height: 22px;
-  color: #90befc;
-  font-size: 14px;
+  width: 14.75rem;
+  height: 41.3125rem;
+  color: #8ebffc;
+  line-height: 4.125rem;
+  font-size: 1.8rem;
+  margin-left: 2.5rem;
 }
 .image {
-  width: 320px;
+  width: 46.125rem;
+  height: 41.3125rem;
+  margin-top: 1.5rem;
   margin-left: 30px;
   background-image: url("../../../assets/img/三型两网.png");
   background-size: 100% 100%;
+  margin-left: 5.125rem;
 }
 .content-footer {
-  margin-top: 30px;
-  height: 300px;
+  margin-top: 7.125rem;
+  height: 50rem;
 }
-
 .content-significance {
-  width: 60%;
+  width: 103.4375rem;
   position: relative;
+  margin-left: 6.5625rem;
 }
 .significance-head {
-  height: 40px;
-  line-height: 40px;
+  height: 7.5rem;
+  line-height: 3.125rem;
   display: flex;
-  font-size: 18px;
-  display: flex;
+}
+.significance-head > span {
+  margin-top: 2.5rem;
+  font-size: 2.5rem;
+  width: 23.5rem;
 }
 .significance-head > hr {
-  width: 75%;
-  padding-top: 18px;
-  margin-left: 8px;
+  width: 77.4375rem;
+  margin-left: 1.25rem;
+  margin-top: 3.85rem;
 }
 .significance-main {
-  height: 270px;
+  height: 43.25rem;
   display: flex;
 }
 .significance-title {
-  width: 35.5%;
-  line-height: 25px;
-  font-size: 14px;
+  width: 34.71875rem;
   text-indent: 2em;
-  text-align: left;
-  letter-spacing: 1px;
-  word-spacing: 8px;
-  color: #90befc;
+  letter-spacing: 0.3rem;
+  color: #8ebffc;
+  font-size: 1.8rem;
+  line-height: 3.125rem;
+  margin-top: 2.48rem;
 }
 .significance-list {
-  width: 64%;
-  text-align: left;
+  width: 68.71875rem;
+  margin-top: 3.75rem;
 }
 .significance-list > li {
-  height: 50px;
-  line-height: 50px;
-  font-size: 14px;
+  height: 6.25rem;
+  line-height: 6.125px;
+  font-size: 1.875rem;
   color: #e2e1e7;
   margin-left: 160px;
+  margin-left: 25.5rem;
   letter-spacing: 2px;
 }
 .size {
-  font-size: 18px;
+  font-size: 3.125rem;
   color: #fff;
   word-spacing: 8px;
-  letter-spacing: 3px;
+  letter-spacing: 0.3rem;
 }
 .significance-bg > p {
   background-image: url("../../../assets/img/服务分割线.png");
   background-size: 100% 100%;
-  width: 100px;
-  height: 300px;
+  width: 15.125rem;
+  height: 45.25rem;
   position: absolute;
-  top: 20px;
-  left: 350px;
+  top: 5rem;
+  left: 52rem;
 }
 .icon {
-  width: 16px;
-  height: 16px;
+  width: 2rem;
+  height: 2rem;
   background-image: url("../../../assets/img/icon_1.png");
   background-size: 100% 100%;
   position: absolute;
-  top: 115px;
-  left: 25px;
+  top: 10.1875rem;
+  left: 4.5625rem;
 }
 .icon2 {
-  width: 16px;
-  height: 16px;
+  width: 2rem;
+  height: 2rem;
   background-image: url("../../../assets/img/icon_1.png");
   background-size: 100% 100%;
   position: absolute;
-  top: 115px;
-  left: 480px;
+  top: 10.3875rem;
+  left: 69rem;
 }
 </style>
