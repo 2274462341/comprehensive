@@ -42,10 +42,8 @@ export default {
   color: #ffff;
 }
 .main {
-  width: 715.875rem;
-  height: 120.4375rem;
-  background-image: url("./assets/img/bg_总.png");
-  background-size: 100% 100%;
+  width: 720rem;
+  height: 122.375rem;
   margin: 0 2.0625rem 2.0625rem 2.0625rem;
 }
 </style>

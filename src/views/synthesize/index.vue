@@ -3,15 +3,15 @@
     <div class="one">
       <Guidance></Guidance>
     </div>
-    <div class="two">
-      <Navigation></Navigation>
-    </div>
-    <div class="three">
-      <Practice></Practice>
-    </div>
     <div class="fore">
       <course></course>
     </div>
+    <div class="two">
+      <Navigation></Navigation>
+    </div>
+    <!-- <div class="three">
+      <Practice></Practice>
+    </div>-->
   </div>
 </template>
 
@@ -38,23 +38,26 @@ export default {
 <style scoped>
 .wrapperAll {
   width: 720rem;
-  height: 120.4375rem;
+  height: 122.375rem;
+
   display: flex;
 }
 .one {
   width: 171rem;
+  background-image: url("../../assets/img/bg_1.png");
+  background-size: 100% 100%;
 }
 .two {
-  width: 303.125rem;
-  margin-left: 1.625rem;
+  width:405.6875rem;
+  margin:0 1.625rem;
 }
-.three {
-  width: 100.9375rem;
-  margin-left: 1.625rem;
-}
+
 .fore {
-  width: 133rem;
-  margin: 0 1.625rem;
+  width: 136.25rem;
+  margin-left:1.625rem;
+   background-image: url("../../assets/img/bg_4.png");
+  background-size: 100% 100%;
+  /* background: red; */
 }
 </style>
  

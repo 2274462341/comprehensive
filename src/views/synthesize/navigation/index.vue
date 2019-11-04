@@ -1,48 +1,53 @@
 <template>
   <div class="wrapperThree">
-    <!--技术导航-->
-    <div class="top">
-      <span>技术导航</span>
-      <hr />
-    </div>
-    <div class="box">
-      <div class="a">
-        <div class="jian">
-          <div class="swiper-button-next btn"></div>
-          <div class="swiper-button-prev btns"></div>
-        </div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <router-link to="/photovoltaic" tag="p">
-                <div class="photovoltaic"></div>
-              </router-link>
-              <router-link to="/Windpower" tag="p">
-                <div class="Windpower"></div>
-              </router-link>
-              <router-link to="/biomass" tag="p">
-                <div class="biomass"></div>
-              </router-link>
-              <router-link to="/Photothermal" tag="p">
-                <div class="Photothermal"></div>
-              </router-link>
-              <router-link to="/thermoelectricity" tag="p">
-                <div class="thermoelectricity"></div>
-              </router-link>
-              <router-link to="/Dryhotrock" tag="p">
-                <div class="Dryhotrock"></div>
-              </router-link>
-              <router-link to="/wasteheat" tag="p">
-                <div class="wasteheat"></div>
-              </router-link>
+    <div class="three-left">
+      <!--技术导航-->
+      <div class="top">
+        <span>技术导航</span>
+        <hr />
+      </div>
+      <div class="box">
+        <div class="a">
+          <div class="jian">
+            <div class="swiper-button-next btn"></div>
+            <div class="swiper-button-prev btns"></div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <router-link to="/photovoltaic" tag="p">
+                  <div class="photovoltaic"></div>
+                </router-link>
+                <router-link to="/Windpower" tag="p">
+                  <div class="Windpower"></div>
+                </router-link>
+                <router-link to="/biomass" tag="p">
+                  <div class="biomass"></div>
+                </router-link>
+                <router-link to="/Photothermal" tag="p">
+                  <div class="Photothermal"></div>
+                </router-link>
+                <router-link to="/thermoelectricity" tag="p">
+                  <div class="thermoelectricity"></div>
+                </router-link>
+                <router-link to="/Dryhotrock" tag="p">
+                  <div class="Dryhotrock"></div>
+                </router-link>
+                <router-link to="/wasteheat" tag="p">
+                  <div class="wasteheat"></div>
+                </router-link>
+              </div>
+              <div class="swiper-slide" style="background:red"></div>
             </div>
-            <div class="swiper-slide" style="background:red"></div>
           </div>
         </div>
+        <div class="bigbox">
+          <router-view></router-view>
+        </div>
       </div>
-      <div class="bigbox">
-        <router-view></router-view>
-      </div>
+    </div>
+    <div class="three-right">
+dfvdf
     </div>
   </div>
 </template>
@@ -75,8 +80,24 @@ export default {
 
 <style scoped>
 .wrapperThree {
-  height: 800px;
-  margin-left: 15px;
+height: 120.4375rem;
+  display: flex;
+  width:405.6875rem;
+
+}
+.three-left{
+  width:303.125rem;
+  border:solid 1px #ccc;
+   background-image: url("../../../assets/img/bg_2.png");
+  background-size: 100% 100%;
+
+}
+.three-right{
+  width:100.9375rem;
+  margin-left: 1.625rem;
+  border:solid 1px #ccc;
+   background-image: url("../../../assets/img/bg_3.png");
+  background-size: 100% 100%;
 }
 .top {
   width: 100%;
@@ -136,17 +157,15 @@ hr {
   position: absolute;
   top: 70px;
   left: 190px;
-  -webkit-transform:scale(0.5);
+  -webkit-transform: scale(0.5);
   font-weight: 800;
 }
 .btns {
   position: absolute;
   top: 70px;
   left: 40px;
-  -webkit-transform:scale(0.5);
+  -webkit-transform: scale(0.5);
   font-weight: 800;
-
-
 }
 .photovoltaic {
   width: 200px;
